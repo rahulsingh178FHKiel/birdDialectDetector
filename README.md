@@ -1,16 +1,16 @@
-# [Your Project Title Here]
+# Bird Audio Dialect Detector
 
 ## Repository Link
 
-[https://github.com/your_username/your_project_name]
+[[https://github.com/rahulsingh178FHKiel/birdDialectDetector]](https://github.com/rahulsingh178FHKiel/birdDialectDetector)
 
 ## Description
 
-[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
+Predicting the geographical region of a bird using from its voice. We will scrape raw recordings of one particular bird species from few regions from Xeno-Canto(massive bioacoustic database), generate spectrograms of these recordings, and build an ML pipeline to predict the bird's geographic location.
 
 ### Task Type
 
-[Image Classification / Chatbot / Regression / Clustering / Other]
+Multi-Class Audio Classification
 
 ### Results Summary
 
