@@ -1,5 +1,8 @@
 # Baseline Model
 
+## Notebook / Script
+*  [`baseline_model.ipynb`](baseline_model.ipynb)
+
 ## Model Selection
 
 * **Baseline Model Type:** Random Chance Classifier (Uniform Dummy Classifier)
