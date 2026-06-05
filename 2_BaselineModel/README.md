@@ -1,24 +1,24 @@
 # Baseline Model
 
-**[Notebook](baseline_model.ipynb)**
+## Model Selection
 
-## Baseline Model Results
+* **Baseline Model Type:** Random Chance Classifier (Uniform Dummy Classifier)
+* **Rationale:** A random chance baseline provides the absolute lower bound of performance. In a multi-class setting with balanced classes, it represents a model that makes predictions uniformly at random. 
 
-### Model Selection
-- **Baseline Model Type:** [e.g., Random Forest, Logistic Regression, Linear Regression, Naive Bayes, etc.]
-- **Rationale:** [Brief explanation of why this model was chosen as baseline]
+## Model Performance
 
-### Model Performance
-- **Evaluation Metric:** [e.g., Accuracy, F1-Score, Precision, Recall, MSE, MAE, R², etc.]
-- **Performance Score:** [e.g., 85% accuracy, F1-score of 0.78, MSE of 0.15]
-- **Cross-Validation Score:** [Mean and standard deviation of CV scores, e.g., 0.82 ± 0.03]
+* **Evaluation Metric:** Classification Accuracy
+* **Performance Score:** 
+  * **Binary Classification (UK vs. Continent):** 50.00%
+  * **4-Class Classification:** 25.00%
+  * **5-Class Classification:** 20.00%
+* **Cross-Validation Score:** N/A (Theoretical analytical baseline; score is mathematically deterministic and holds constant across all folds).
 
-### Evaluation Methodology
-- **Data Split:** [Train/Validation/Test split ratios, e.g., 70/15/15]
-- **Evaluation Metrics:** [List all metrics used and justify why they are appropriate for this problem]
+## Evaluation Methodology
 
-### Metric Practical Relevance
-[Explain the practical relevance and business impact of each chosen evaluation metric. How do these metrics translate to real-world performance and decision-making? What do the metric values mean in the context of your specific problem domain?]
+* **Data Split:** Stratified Train/Validation/Test split (e.g., 80/20 train/validation) to ensure class balance remains identical to the population distribution.
+* **Evaluation Metrics:** Accuracy is used as the primary metric. Because class distributions are kept balanced across regions, accuracy provides a clear, un-biased measure of classification performance.
 
-## Next Steps
-This baseline model serves as a reference point for evaluating more sophisticated models in the [Model Definition and Evaluation](../3_Model/README.md) phase.
+## Metric Practical Relevance
+
+* **Accuracy:** In the context of dialect classification, accuracy directly translates to the percentage of bird recordings whose regional origin is correctly identified. Comparing our CNN results (~87.5% for binary, ~65% for 4-class) against this baseline demonstrates that the model successfully learns distinct acoustic patterns corresponding to geographic regions.
