@@ -1,0 +1,6 @@
+requests
+pandas
+torch
+torchaudio
+matplotlib
+scikit-learn
