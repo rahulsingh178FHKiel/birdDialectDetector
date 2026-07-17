@@ -1,3 +1,3 @@
 # Presentation
 
-**[Slides](name_of_your_file_including_the_presentation_slides)**
+**[Slides](https://github.com/rahulsingh178FHKiel/birdDialectDetector/blob/main/4_Presentation/Applied%20ML_finalPresentation.pdf)**
