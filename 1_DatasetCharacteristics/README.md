@@ -47,7 +47,7 @@
 
 ## Exploratory Data Analysis
 
-The exploratory data analysis is conducted within the [train.ipynb](train.ipynb) notebook, which performs:
+The exploratory data analysis is conducted within the [exploratory_data_analysis.ipynb](exploratory_data_analysis.ipynb) notebook, which performs:
 * **Data loading and initial inspection** of geographic distributions and metadata attributes.
 * **Visualizing input spectrograms** to verify the quality of the 3-second dialect window crop.
 * **Class distribution summaries** dynamically matching the current selected classification mode (3-class, 4-class, 5-class, or binary).
